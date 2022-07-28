@@ -1,0 +1,7 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+from collections import namedtuple
+n = int(input())
+mark = input().split().index('MARKS')
+print('{:.2f}'.format(sum([ int(input().split()[mark])
+ for x in range(n) ]) / n))
+   
